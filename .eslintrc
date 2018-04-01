@@ -1,0 +1,302 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "mocha": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "assert": Function.prototype,
+    "Ya": Function.prototype
+  },
+  "plugins": [
+    "jest"
+  ],
+  "extends": ["plugin:jest/recommended"],
+  // http://eslint.org/docs/user-guide/configuring.html#specifying-language-options
+  "parserOptions": {
+    "sourceType": "module",
+    // http://eslint.org/docs/user-guide/configuring.html#specifying-language-options
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "classes": true,
+      "defaultParams": true,
+      "destructuring": true,
+      "forOf": true,
+      "generators": false,
+      "modules": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": false,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "regexUFlag": true,
+      "regexYFlag": true,
+      "restParams": true,
+      "spread": true,
+      "superInFunctions": true,
+      "templateStrings": true,
+      "unicodeCodePointEscapes": true,
+      "globalReturn": true,
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore",
+    }],
+    "no-cond-assign": 2,
+    "no-console": [
+      0,
+    ],
+    // 1
+    "no-alert": 2,
+    "no-debugger": 2,
+    "no-constant-condition": 2,
+    "no-control-regex": 2,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    // 1
+    "no-duplicate-case": 2,
+    "no-empty-character-class": 2,
+    // 1
+    "no-empty": [2, { "allowEmptyCatch": true }],
+    // 1
+    "no-ex-assign": 2,
+    // 1
+    "no-extra-boolean-cast": 2,
+    // 1
+    //    "no-extra-parens": 2, // 1
+    "no-extra-semi": 2,
+    // 1
+    "no-func-assign": 0,
+    "no-inner-declarations": 0,
+    "no-invalid-regexp": 2,
+    "no-irregular-whitespace": 2,
+    "no-negated-in-lhs": 0,
+    "no-obj-calls": 2,
+    "no-regex-spaces": 2,
+    "no-sparse-arrays": 2,
+    "no-unexpected-multiline": 2,
+    "no-unreachable": 2,
+    // 1
+    "use-isnan": 2,
+    //    "valid-jsdoc": 1,
+    "valid-typeof": 2,
+    // 1
+
+    // http://eslint.org/docs/rules/#best-practices
+    //    "accessor-pairs": [2, {"getWithoutSet": true}],
+    "block-scoped-var": 2,
+    "complexity": 0,
+    "consistent-return": 0,
+    //    "curly": [2, "all"],
+    //    "default-case": 1,
+    "dot-location": 0,
+    "guard-for-in": 0,
+    "eqeqeq": 2,
+    "no-caller": 2,
+    "no-div-regex": 2,
+    "no-else-return": 2,
+    "no-empty-pattern": 2,
+    "no-eq-null": 2,
+    "no-eval": 2,
+    "no-extend-native": [
+      2,
+      {
+        "exceptions": [
+          "Object"
+        ]
+      }
+    ],
+    "no-extra-bind": 2,
+    "no-fallthrough": 2,
+    "no-floating-decimal": 2,
+    "no-implicit-coercion": 2,
+    "no-implied-eval": 2,
+    "no-iterator": 2,
+    "no-labels": 2,
+    "no-lone-blocks": 2,
+    "no-loop-func": 2,
+    "no-magic-numbers": 0,
+    "no-multi-spaces": 2,
+    // 1
+    "no-multi-str": 2,
+    // 1
+    "no-native-reassign": 2,
+    "no-new-func": 2,
+    "no-new-wrappers": 2,
+    // 1
+    "no-new": 2,
+    "no-octal-escape": 2,
+    "no-octal": 2,
+    "no-process-env": 0,
+    "no-proto": 2,
+    "no-redeclare": 2,
+    "no-return-assign": 2,
+    "no-script-url": 0,
+    "no-self-compare": 2,
+    "no-sequences": 2,
+    "no-throw-literal": 2,
+    "no-unused-expressions": 2,
+    "no-useless-call": 0,
+    "no-useless-concat": 2,
+    "no-void": 2,
+    "no-warning-comments": 0,
+    "no-with": 2,
+    "radix": 2,
+    "wrap-iife": 0,
+    "yoda": 2,
+    // 1
+    "strict": 0,
+    // 1
+
+    // http://eslint.org/docs/rules/#variables
+    "init-declarations": 0,
+    "no-catch-shadow": 0,
+    "no-delete-var": 2,
+    "no-label-var": 2,
+    "no-shadow-restricted-names": 2,
+    "no-shadow": [
+      2,
+      {
+        "allow": [
+          "app",
+          "res",
+          "req"
+        ]
+      }
+    ],
+    "no-undef-init": 2,
+    "no-undef": 2,
+    //    "no-undefined": 1,
+    "no-unused-vars": 2,
+    "no-use-before-define": 0,
+    //1,
+
+    // http://eslint.org/docs/rules/#ecmascript-6
+    //    "arrow-parens": 2, // 1
+    //    "arrow-spacing": 2, // jscs
+    "constructor-super": 2,
+    "generator-star-spacing": 2,
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-this-before-super": 2,
+    // 1
+    //    "no-var": 2, // 1
+    //    "object-shorthand": 2,
+    "prefer-arrow-callback": 2,
+    //    "prefer-const": 1,
+    //    "prefer-reflect": 2, // 1
+    //    "prefer-spread": 2, // 1
+    "prefer-template": 2,
+    // 1
+    "require-yield": 1,
+    "curly": [
+      2,
+      "all"
+    ],
+    "keyword-spacing": [
+      2,
+      {}
+    ],
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "space-unary-ops": [
+      2,
+      {
+        "words": false,
+        "nonwords": false
+      }
+    ],
+    "space-infix-ops": 2,
+    "one-var": [
+      2,
+      "never"
+    ],
+    "space-in-parens": [
+      2,
+      "never"
+    ],
+    "space-before-function-paren": [
+      2,
+      {
+        "anonymous": "ignore",
+        "named": "never"
+      }
+    ],
+    "comma-style": [
+      2,
+      "last"
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "array-bracket-spacing": [
+      2,
+      "never"
+    ],
+    "dot-notation": 0,
+    "key-spacing": [
+      2,
+      {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "quote-props": [
+      2,
+      "as-needed"
+    ],
+    "eol-last": 2,
+    "no-multiple-empty-lines": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-trailing-spaces": [
+      2,
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "indent": [
+      2,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "semi-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "jest/no-disabled-tests": 0,
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error"
+  }
+}
