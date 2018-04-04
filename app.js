@@ -138,6 +138,7 @@ function iterationAlg() {
         let maxV = 'v0';
 
         const l = countL(ro);
+
         for (const lVId in l) {
             if (l[lVId] > max) {
                 max = l[lVId];
@@ -155,6 +156,7 @@ function iterationAlg() {
         const yc = sumY / ro[maxV];
 
         const vToSwap = board.findTByCoordinate(xc, yc);
+
         let bestQ = countQ();
         let bestV = maxV;
         vToSwap.forEach(vId => {
@@ -177,6 +179,8 @@ function iterationAlg() {
 
         iteration++;
     }
+    console.log('Результат:');
+    console.log(board._board);
 }
 
 continuousAlg();

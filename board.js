@@ -1,6 +1,6 @@
 class Board {
     constructor(matrix) {
-        const maxX = 2;
+        const maxX = 5;
 
         let x = 0;
         let y = 0;
